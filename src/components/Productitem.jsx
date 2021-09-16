@@ -1,4 +1,4 @@
-import { useState, useEffect,useRef } from "react";
+import { useState, useEffect } from "react";
 import { dbRef } from "../Utils/firebase";
 import { CircularProgress } from "@material-ui/core";
 import ReviewInput from "./ReviewInput";
@@ -40,6 +40,7 @@ const ProductItem = () => {
     return () => {
       productRef.off("value", ref);
     };
+    // eslint-disable-next-line
   }, []);
 
   return (
