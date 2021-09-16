@@ -168,7 +168,7 @@ body{
      color: red;
  }
 .ratingsStar{
-    min-width:200px;
+    min-width:180px;
 }
  
  .addedReviews{
@@ -181,13 +181,18 @@ body{
     }
     .reviewTextDiv{
         max-width: 300px;
+
         margin-left:40px;
     }
-
-
     
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 780px) {
         .container{
-            flex-direction: column;
+            flex-direction: column-reverse;    
+        }
+        .reviewTextDiv span, .reviewText{
+          font-size:13px !important;
+        }
+        .reviewTextDiv{
+            margin-left: 10px;
         }
     }

@@ -1,6 +1,7 @@
 import { useState, useEffect,useRef } from "react";
 import { dbRef } from "../Utils/firebase";
 import { CircularProgress } from "@material-ui/core";
+import ReviewInput from "./ReviewInput";
 import Reviews from "./Reviews";
 const ProductItem = () => {
   const [loading, setLoading] = useState(true);
@@ -55,7 +56,7 @@ const ProductItem = () => {
           setShowModal={setShowModal}
         />
       )}
-     
+      {showModal && <ReviewInput dbRef={dbRef} setShowModal={setShowModal} />}
     </div>
   );
 };
