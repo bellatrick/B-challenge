@@ -46,7 +46,7 @@ const ProductItem = () => {
   return (
     <div className="container">
       {loading ? (
-        <CircularProgress />
+        <CircularProgress style={{margin:'10px auto'}} />
       ) : (
         <Reviews
           productName={productName}

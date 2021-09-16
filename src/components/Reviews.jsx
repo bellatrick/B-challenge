@@ -53,7 +53,7 @@ const Reviews = (props) => {
                 props.setShowModal(!props.showModal);
               }}
             >
-              Add review
+             {props.showModal?'Close review':'Add Review'}
             </button>
           </div>
         </div>
