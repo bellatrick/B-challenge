@@ -195,4 +195,7 @@ body{
         .reviewTextDiv{
             margin-left: 10px;
         }
+        .reviews{
+            min-width:300px;
+        }
     }
